@@ -65,5 +65,10 @@ describe "boolean_datepicker" do
 
   end
 
+  describe "rspec matcher" do
+    it{Document.should have_boolean_datepicker_on(:ok)}
+    it{Document.should_not have_boolean_datepicker_on(:field)}
+  end
+
 
 end

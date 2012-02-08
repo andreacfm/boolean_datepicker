@@ -4,8 +4,8 @@ require 'active_record'
 require 'sqlite3'
 
 require 'boolean_datepicker'
-require 'support/document'
 
+Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f}
 ActiveRecord::Base.establish_connection :adapter => "sqlite3", :database  => "db/test.sqlite3"
 
 RSpec.configure do |config|
