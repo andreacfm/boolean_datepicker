@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = "Andrea Campolonghi"
   s.email       = "acampolonghi@gmail.com"
   s.homepage    = ""
-  s.summary     = "When a boolean field is saved with a true value saved the datetime."
+  s.summary     = "Trace the datetime of the last time a boolean field has been saved with e true value."
   s.description = ""
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["README.md"]
